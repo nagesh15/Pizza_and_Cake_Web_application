@@ -1,0 +1,402 @@
+* { 
+	margin: 0px;
+	padding: 0px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: hsl(29, 91%, 50%);
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+/*beginning of login page */
+.container {
+	width: 100%;
+	height: 100%;
+    /* background: linear-gradient(to right, #ffb75e, #ed8f03); */
+	/* background-image: url('img/pizza.jpg');
+	filter: opacity(0.2); */
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+.container::before {
+	z-index: -1;
+    content: '';
+    position: absolute;
+
+    opacity: 0.9;
+	width: 100%;
+	height: 100%;
+    background: url('img/pizza.jpg') no-repeat 0 0;
+}
+
+.card {
+	width: 350px;
+	height:620px;
+	box-shadow: 0 0 40px 20px rgba(0,0, 0, 0.26); 
+	position: relative;
+	margin: 2% auto;
+	background: #fff;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.button-box {
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #ff61241f
+	;
+	border-radius: 30px;
+}
+
+.toggle-btn {
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+
+#btn {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right, #ff105d, #ffad06);
+	border-radius: 30px;
+	transition: .5s;
+}
+
+.input-group {
+	top: 110px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+
+.input-field {
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+
+.submit-btn {
+	width: 75%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	background: linear-gradient(to right, #ff105f, #ffad06);
+	border-radius: 30px;
+	border: 0;
+	outline: none;
+	position: relative;
+	top: 50px;
+	transition: .5s;
+}
+
+/* to hide number arrow*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#login {
+	left: 50px;
+}
+
+#login h3 {
+	margin-top: 20px;
+}
+
+#login a {
+	color: #008CBA;
+	font-size: 15px;
+}
+
+#register {
+	left: 450px;
+}
+
+.field-error {
+	color: red;
+	margin-top: 70px;
+}
+
+.bg-img {
+	background-image: url('img/logo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+	filter: opacity(0.2);		
+}
+/*start of home page*/
+ 
+.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	margin: 0 auto;
+	padding: 1%;
+	border: 1px solid black;
+	background: white; 
+	height: 7%;
+}
+
+
+.logo {
+	width: 6%;
+	margin-left: 10%;
+}
+
+.logo img {
+	height: 1%;
+	width: 60%;
+	float: left;
+	margin: 0 auto;
+}
+.menu {
+    text-align: right;
+    padding:1%;
+    font-weight: bold;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding:0 20px;
+	margin-bottom: 5px;
+}
+
+.clear_float {
+    clear: both;
+    float: none;
+}
+
+.main {
+	margin: 6% 10px 0 10px;
+	max-width: 100%;
+	overflow: hidden;
+	height:70%;
+	background: linear-gradient(to bottom, #ffffff 0%, #94caff 111%);
+	box-shadow: 6px 8px 10px #0000004f;
+}
+
+.col {
+	float: left;
+	width: 49%;
+	padding: 5px;
+  }
+
+  .pizza-h1 {
+	  text-align: center;
+	  background-color: #ed8f03;
+	  color: black;
+	  padding:20px;
+  }
+
+  .cake-h1 {
+	text-align: center;
+	background-color: #1E130F;
+	color: #D2C090;
+	padding:20px;
+}
+
+  
+
+  .responsive {
+	width: 100%;
+	height: auto;
+  }
+
+.main::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+
+.admin-h1 {
+	font-size: medium;
+	float: left;
+}
+
+table {
+	border-collapse: collapse;
+	width: 95%;
+	margin: 5px 2.5%;
+  }
+  
+  th, td {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid black;
+  }
+
+.center-heading  {
+	text-align: center;
+	font-size: 30px;
+}
+  
+.side {
+	font-size: 15px;
+	float: right;
+	padding-top: 5px;
+}
+
+.side a {
+	color: black;
+	text-decoration: underline;
+}
+
+.box {
+	margin: 6% auto;
+	padding: 20px;
+	width: 90%;
+	border: 1px solid black;
+}
+
+.submit-button {
+	width: 75%;
+	margin: 20px 10%;
+	padding: 10px;
+	color: white;
+	background-color: #66a3ff;
+}
+
+.form-input {
+	width: 90%;
+	margin: 10px 0;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+button {
+	border: none;
+	padding: 10px 15px;
+}
+
+.btn-active {
+	background-color: #4CAF50;
+}
+
+.btn-deactive {
+	background-color: #f77948;
+}
+
+.btn-delete {
+	background-color: #f44336;
+}
+
+.btn-edit {
+	background-color:#008CBA;
+}
+
+button a {
+	color: white;
+}
+
+button a:hover {
+	color: white;
+}
+
+.error-msg {
+	color: red;
+	font-weight: bold;
+}
+
+.small-img {
+	height: 50px;
+}
+
+/*index page of cust side */
+body {
+	max-height: 100%;
+}
+
+.index {
+	display: grid;
+	grid-template-rows: 70% 30%;
+	height: 100%;
+	width: 100%;
+}
+
+.textbox {
+	margin: 0 auto;
+}
+
+.textbox h1 {
+	margin-top: 50px;
+ 	color: #008CBA;
+	text-shadow: 2px 2px 5px rgb(102, 234, 243);
+}
+
+.mid {
+	border: 0.5px solid bisque;
+	padding: 5px;
+	box-shadow: 2px 3px 8px rgb(235, 132, 8);
+}
+
+.mid input[type=text] {
+	padding: 20px;
+}
+
+.mid input[type=button] {
+	padding: 20px;
+	background-color: #008CBA;
+	color: white;
+	border: none;
+}
+
+#error {
+	color: red;
+	margin-top: 30px;
+}
+/*end */
+
+.sort {
+	width: 95%;
+	text-align: right;
+	padding: 20px;
+	margin: 20px;
+}
+
+.sort select {
+	padding: 5px;
+}
+  
